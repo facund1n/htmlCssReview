@@ -1,3 +1,3 @@
 # htmlCssReview
 
-Simple single page w/flex box + grid
+Simple single page w/flex + grid
