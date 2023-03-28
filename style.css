@@ -1,0 +1,163 @@
+/* color palletes:
+#fb7e14
+#000000
+#151515
+#292929
+#ffffff	 */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* backgrounds */
+.bg-dark {
+  background-color: #000000;
+}
+.bg-dark-gray {
+  background-color: #151515;
+}
+.bg-light-gray {
+  background-color: #292929;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.bg-orange {
+  background-color: #fb7e14;
+}
+/* fonts */
+h1 {
+  font-family: monospace, sans-serif;
+  font-weight: bold;
+  font-size: larger;
+}
+a,
+p {
+  font-family: Verdana, sans-serif;
+}
+/* fonts colors */
+.font-orange {
+  color: #fb7e14;
+}
+.font-white {
+  color: #ffffff;
+}
+.font-black {
+  color: #000000;
+}
+
+/* font alingment */
+.font-centered {
+  margin: 1px 8px 1px 8px;
+  text-align: center;
+}
+.font-justify {
+  margin: 1px 8px 1px 8px;
+  text-align: justify;
+}
+.font-left {
+  margin: 1px 8px 1px 8px;
+  text-align: left;
+}
+
+/* navbar */
+.nav-style {
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+  background-color: #292929;
+}
+
+@media (max-width: 425px) {
+  .nav-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.nav-children {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+@media (max-width: 425px) {
+  .nav-children {
+    display: flex;
+    flex-flow: column wrap;
+    place-content: center;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+/* anchor */
+a {
+  color: #fb7e14;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+/* back ground image effect + title*/
+.parallax {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5d856e3d132e863fa2968760/1569056434415-X4D2IIBURIZJ4VCD9Z6S/2.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title {
+  position: absolute;
+  top: 22.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: monospace;
+  text-align: center;
+  color: #ffffff;
+}
+.parallax2 {
+  background-image: url("https://media.moddb.com/images/mods/1/42/41817/Black_Mesa_outdoors_desert.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* middle photos grid  */
+.wrapper {
+  display: flex;
+  margin: 0 5px 0 5px;
+  gap: 15px;
+}
+@media (max-width: 425px) {
+  .wrapper {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 15px;
+  }
+}
+/* wrapper children */
+.one {
+  max-width: 100%;
+  height: auto;
+}
+.two {
+  max-width: 100%;
+  height: auto;
+}
+.three {
+  max-width: 100%;
+  height: auto;
+}
+/* footer */
+footer {
+  min-height: 250px;
+}
