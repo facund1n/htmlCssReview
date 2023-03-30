@@ -7,7 +7,7 @@
 
 * {
   padding: 0;
-  margin: 0 1px 0 1px;
+  margin: 0;
   font-size: 16px;
   line-height: 1.2;
 }
@@ -71,17 +71,12 @@ p {
 
 /* navbar */
 .nav-style {
+  position: fixed;
+  overflow: hidden;
+  z-index: 2 !important;
   width: 100%;
-  padding: 5px 0px 5px 0px;
+  padding: 5px 0 5px 0;
   background-color: #292929;
-}
-/* ver?: */
-@media (max-width: 425px) {
-  .nav-centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 .nav-children {
   display: flex;
@@ -92,11 +87,10 @@ p {
 @media (max-width: 425px) {
   .nav-children {
     display: flex;
-    flex-flow: column wrap;
-    place-content: center;
+    flex-direction: column;
+    gap: 5px;
   }
 }
-
 li {
   list-style-type: none;
 }
@@ -110,8 +104,7 @@ a:hover {
   color: #ffffff;
   transition: 0.3s;
 }
-
-/* back ground image effect + title*/
+/* parallax back ground image effect + title*/
 .parallax {
   background-image: url("https://images.squarespace-cdn.com/content/v1/5d856e3d132e863fa2968760/1569056434415-X4D2IIBURIZJ4VCD9Z6S/2.jpg");
   min-height: 500px;
@@ -122,7 +115,8 @@ a:hover {
 }
 .title {
   position: absolute;
-  top: 22.5%;
+  z-index: 1;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: monospace;
@@ -145,7 +139,6 @@ a:hover {
   margin: 10px;
   gap: 15px;
 }
-
 @media (max-width: 425px) {
   .wrapper {
     flex-direction: column;
@@ -172,7 +165,6 @@ a:hover {
   max-width: 100%;
   height: auto;
 }
-
 /* carousel container */
 .carousel-conatainer {
   display: flex;
@@ -184,7 +176,6 @@ footer {
   grid-template-columns: 33.33% 33.33% 33.33%;
   min-height: 250px;
 }
-
 @media (max-width: 425px) {
   footer {
     display: flex;
@@ -221,13 +212,13 @@ footer {
   color: #000000;
   gap: 10px;
 }
+
 /* hr */
 hr {
   opacity: 30%;
 }
 
 /* paddings */
-
 .padding-y {
   padding: 15px 0 15px 0;
 }
