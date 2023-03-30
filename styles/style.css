@@ -107,11 +107,21 @@ a:hover {
 /* parallax back ground image effect + title*/
 .parallax {
   background-image: url("https://images.squarespace-cdn.com/content/v1/5d856e3d132e863fa2968760/1569056434415-X4D2IIBURIZJ4VCD9Z6S/2.jpg");
-  min-height: 500px;
+  min-height: 750px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 425px) {
+  .parallax {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5d856e3d132e863fa2968760/1569056434415-X4D2IIBURIZJ4VCD9Z6S/2.jpg");
+    min-height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 .title {
   position: absolute;
@@ -123,13 +133,35 @@ a:hover {
   text-align: center;
   color: #ffffff;
 }
+@media (max-width: 425px) {
+  .title {
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    text-align: center;
+    color: #ffffff;
+  }
+}
 .parallax2 {
   background-image: url("https://media.moddb.com/images/mods/1/42/41817/Black_Mesa_outdoors_desert.png");
-  min-height: 500px;
+  min-height: 750px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 425px) {
+  .parallax2 {
+    background-image: url("https://media.moddb.com/images/mods/1/42/41817/Black_Mesa_outdoors_desert.png");
+    min-height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 /* middle photos grid  */
 .wrapper {
@@ -230,6 +262,20 @@ hr {
 }
 .padding-bottom {
   padding-bottom: 15px;
+}
+
+/* margins */
+.margin-y {
+  margin: 15px 0 15px 0;
+}
+.margin-x {
+  margin: 0 10px 0 10px;
+}
+.margin-top {
+  margin-top: 15px;
+}
+.margin-bottom {
+  margin-bottom: 15px;
 }
 
 /* custom-carrousel-description */
