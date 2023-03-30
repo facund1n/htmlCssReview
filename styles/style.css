@@ -75,7 +75,7 @@ p {
   padding: 5px 0px 5px 0px;
   background-color: #292929;
 }
-
+/* ver?: */
 @media (max-width: 425px) {
   .nav-centered {
     display: flex;
@@ -140,11 +140,12 @@ a:hover {
 /* middle photos grid  */
 .wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  margin: auto;
+  margin: 10px;
   gap: 15px;
 }
+
 @media (max-width: 425px) {
   .wrapper {
     flex-direction: column;
@@ -170,6 +171,12 @@ a:hover {
   place-items: center;
   max-width: 100%;
   height: auto;
+}
+
+/* carousel container */
+.carousel-conatainer {
+  display: flex;
+  margin: 10px 20px 10px 20px;
 }
 /* footer + footer grid*/
 footer {
@@ -217,4 +224,30 @@ footer {
 /* hr */
 hr {
   opacity: 30%;
+}
+
+/* paddings */
+
+.padding-y {
+  padding: 15px 0 15px 0;
+}
+.padding-x {
+  padding: 0 10px 0 10px;
+}
+.padding-top {
+  padding-top: 15px;
+}
+.padding-bottom {
+  padding-bottom: 15px;
+}
+
+/* custom-carrousel-description */
+.custom-description {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-family: monospace;
+  text-align: center;
+  color: #ffffff;
 }

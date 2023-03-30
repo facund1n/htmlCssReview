@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>html + css review</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
+  <!-- header -->
   <header class="nav-style font-verdana">
     <nav>
       <ul class="nav-children">
@@ -15,18 +22,22 @@
           alt="hllogo"
           height="60px"
         />
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
         <li><a href="#">PHOTOS</a></li>
       </ul>
     </nav>
   </header>
-  <body class="bg-dark-gray">
+  <!-- body -->
+  <body class="bg-dark-gray" id="home">
+    <!-- parallax -->
     <div class="title"><h2>BIENVENIDO A BLACK MESA</h2></div>
     <div class="parallax"></div>
     <br />
     <section>
-      <h1 class="font-orange font-centered">Black Mesa Research Facility</h1>
+      <h1 class="font-orange font-centered padding-y" id="about">
+        Black Mesa Research Facility
+      </h1>
       <p class="font-white font-centered">
         <b>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad possimus
@@ -36,43 +47,71 @@
       </p>
     </section>
     <br />
-    <section class="wrapper">
-      <div class="one">
-        <img src="./img/freeman.webp" alt="freeman" width="100%" />
-        <h1 class="font-orange font-centered">Gordon Freeman</h1>
+    <!-- mid section -->
+    <section>
+      <div class="wrapper">
+        <div class="one">
+          <img src="./img/freeman.webp" alt="freeman" width="100%" />
+          <h1 class="font-orange font-centered padding-y">Gordon Freeman</h1>
 
-        <p class="font-white font-justify">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-          voluptatem, doloremque et, perspiciatis quisquam illum accusamus
-          facere, earum dolorum tempore mollitia unde! Corrupti porro enim
-          facere asperiores maxime itaque accusantium!
-        </p>
-      </div>
-      <div class="two">
-        <img src="./img/freeman.webp" alt="freeman" width="100%" />
-        <h1 class="font-orange font-centered">Gordon Freeman</h1>
-
-        <p class="font-white font-justify">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          eaque quis, molestiae incidunt asperiores laborum ab animi? Aliquid
-          fugit deleniti iure eos sequi corrupti, quidem consequuntur odit minus
-          commodi inventore.
-        </p>
-      </div>
-      <div class="three">
-        <img src="./img/freeman.webp" alt="freeman" width="100%" />
-        <h1 class="font-orange font-centered">Gordon Freeman</h1>
-
-        <p class="font-white font-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-          ratione reprehenderit, error quos aut enim impedit natus delectus odit
-          doloribus dignissimos, dolorum nemo sed facere. Nihil enim quaerat
-          debitis neque?
-        </p>
+          <p class="font-white font-justify">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+            voluptatem, doloremque et, perspiciatis quisquam illum accusamus
+            facere, earum dolorum tempore mollitia unde! Corrupti porro enim
+            facere asperiores maxime itaque accusantium!
+          </p>
+        </div>
+        <div class="two">
+          <img src="./img/freeman.webp" alt="freeman" width="100%" />
+          <h1 class="font-orange font-centered padding-y">Gordon Freeman</h1>
+          <p class="font-white font-justify">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+            eaque quis, molestiae incidunt asperiores laborum ab animi? Aliquid
+            fugit deleniti iure eos sequi corrupti, quidem consequuntur odit
+            minus commodi inventore.
+          </p>
+        </div>
+        <div class="three">
+          <img src="./img/freeman.webp" alt="freeman" width="100%" />
+          <h1 class="font-orange font-centered padding-y">Gordon Freeman</h1>
+          <p class="font-white font-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            ratione reprehenderit, error quos aut enim impedit natus delectus
+            odit doloribus dignissimos, dolorum nemo sed facere. Nihil enim
+            quaerat debitis neque?
+          </p>
+        </div>
       </div>
     </section>
     <br />
+    <!-- parallax2 -->
     <div class="parallax2"></div>
+    <!-- carousell title -->
+    <h1 class="font-orange font-centered padding-y">PHOTOS</h1>
+    <p class="font-white font-centered padding-bottom">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam nesciunt
+      totam necessitatibus nostrum pariatur ipsam voluptatem tempora culpa
+      possimus. Eaque reprehenderit est consectetur error facilis dolorem
+      maiores cumque quaerat blanditiis?
+    </p>
+
+    <!-- carrousel -->
+
+    <div class="fade carousel-conatainer">
+      <div>
+        <div class="custom-description">Antimatter Transpotation Center</div>
+        <img src="./img/bm-inside.jpg" alt="bm-inside" width="100%" />
+      </div>
+      <div>
+        <div class="custom-description">High security entrace control</div>
+        <img src="./img/bm-inside2.jpg" alt="bm-inside2" width="100%" />
+      </div>
+      <div>
+        <div class="custom-description">Tunnel interconnections</div>
+        <img src="./img/bm-inside3.jpg" alt="bm-inside3" width="100%" />
+      </div>
+    </div>
+    <!-- footer -->
     <footer class="bg-orange">
       <div class="footer-item-custom">
         <img
@@ -98,11 +137,12 @@
           >A link to Black Mesa</a
         >
       </div>
-      <div class="footer-item-custom">
+      <div class="footer-item-custom padding-bottom">
         <h1>Contact:</h1>
         <a class="font-black" mailto="facus16s@gmail.com">facus16s@gmail.com</a>
       </div>
     </footer>
+    <!-- "footer 2" -->
     <div class="footer-bottom font-monospace">
       <p>facund1n - all rigths reserved ® - Rolling Code School 2023</p>
       <a href="https://rollingcodeschool.com/" class="font-black">
@@ -112,5 +152,16 @@
         &nbsp facund1n's GITHUB</a
       >
     </div>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- scripts -->
+    <script
+      type="text/javascript"
+      src="./scripts/slick-initializer.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </body>
 </html>
