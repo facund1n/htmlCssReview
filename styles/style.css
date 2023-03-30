@@ -7,7 +7,7 @@
 
 * {
   padding: 0;
-  margin: 0 1px 0 1px;
+  margin: 0;
   font-size: 16px;
   line-height: 1.2;
 }
@@ -71,17 +71,12 @@ p {
 
 /* navbar */
 .nav-style {
+  position: fixed;
+  overflow: hidden;
+  z-index: 2 !important;
   width: 100%;
-  padding: 5px 0px 5px 0px;
+  padding: 5px 0 5px 0;
   background-color: #292929;
-}
-
-@media (max-width: 425px) {
-  .nav-centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 .nav-children {
   display: flex;
@@ -92,11 +87,10 @@ p {
 @media (max-width: 425px) {
   .nav-children {
     display: flex;
-    flex-flow: column wrap;
-    place-content: center;
+    flex-direction: column;
+    gap: 5px;
   }
 }
-
 li {
   list-style-type: none;
 }
@@ -110,8 +104,7 @@ a:hover {
   color: #ffffff;
   transition: 0.3s;
 }
-
-/* back ground image effect + title*/
+/* parallax back ground image effect + title*/
 .parallax {
   background-image: url("https://images.squarespace-cdn.com/content/v1/5d856e3d132e863fa2968760/1569056434415-X4D2IIBURIZJ4VCD9Z6S/2.jpg");
   min-height: 500px;
@@ -122,7 +115,8 @@ a:hover {
 }
 .title {
   position: absolute;
-  top: 22.5%;
+  z-index: 1;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: monospace;
@@ -140,9 +134,9 @@ a:hover {
 /* middle photos grid  */
 .wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  margin: auto;
+  margin: 10px;
   gap: 15px;
 }
 @media (max-width: 425px) {
@@ -171,13 +165,17 @@ a:hover {
   max-width: 100%;
   height: auto;
 }
+/* carousel container */
+.carousel-conatainer {
+  display: flex;
+  margin: 10px 20px 10px 20px;
+}
 /* footer + footer grid*/
 footer {
   display: grid;
   grid-template-columns: 33.33% 33.33% 33.33%;
   min-height: 250px;
 }
-
 @media (max-width: 425px) {
   footer {
     display: flex;
@@ -214,7 +212,33 @@ footer {
   color: #000000;
   gap: 10px;
 }
+
 /* hr */
 hr {
   opacity: 30%;
+}
+
+/* paddings */
+.padding-y {
+  padding: 15px 0 15px 0;
+}
+.padding-x {
+  padding: 0 10px 0 10px;
+}
+.padding-top {
+  padding-top: 15px;
+}
+.padding-bottom {
+  padding-bottom: 15px;
+}
+
+/* custom-carrousel-description */
+.custom-description {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-family: monospace;
+  text-align: center;
+  color: #ffffff;
 }
